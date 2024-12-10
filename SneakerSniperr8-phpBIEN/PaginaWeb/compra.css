@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+}
+
+/*Carrito*/
+
+.carrito{
+    width: 30px;
+    height: 30px;
+}
+
+
+/*-------------------*/
+
+/*Header*/
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: var(--blanco);
+}
+
+.headerdiv{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    justify-content: space-evenly;
+    font-size: 25px;
+    color: var(--negro);
+}
+
+.logo{
+    height: 85%;
+    width: 85%;
+}
+/*------------------*/
+
+/*Barra de busqueda*/
+
+.Busqueda input{
+    all: unset;
+    font-size: 16px;
+}
+
+.Busqueda{
+    background-color: rgb(245, 245, 245);
+    border-radius: 100px;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+/*------------------*/
+
+/*Lupa de busqueda*/
+
+.Busqueda img{
+    margin-left: 15px;
+}
+
+/*-------------------*/
+.Menu{
+    height:100% ;
+}
+/* MENU DESPLEGABLE */
+
+.Menu:hover .desplegable{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    gap: 10px;
+}
+
+.Menu p {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.desplegable{
+    display: none;
+    position: absolute;
+    top: 87px;
+    background-color: white;
+    left: 0;
+    width: 100%;
+}
+
+/* --------- */
+
+/*Barra de logos*/
+
+.logos img{
+    justify-content: space-evenly;
+}
+
+
+.logos{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #E2E8F0;
+    padding:5px 0;
+}
+
+/*---------------------*/
+
+/*Iniciar sesion / Resistrate */
+
+.LogSign{
+    width: 70px;
+    height: 32px;
+    font-size: 15px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 0px;
+    transition: 0.3s;
+}
+
+.LogSign:hover{
+    width: 70px;
+    height: 32px;
+    font-size: 15px;
+    border-color: rgb(0, 0, 0);
+}
+
+.Ftproducto{
+    margin-top: 70px;
+    width: 70%;
+    height: 80%;
+}
+
+.producto {
+    display: flex;
+}
+
+.texto{
+    text-align: left;
+    justify-content: right;
+    border-color: #cfcfcf;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.buy{
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    border: 0px;
+    transition: 0.3s;
+}
+
+.buy:hover{
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 100px;
+    border: 0px;
+    transition: 0.3s;
+    border-color: black;
+}
+
+.carro{
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+    border: 0px;
+    transition: 0.3s;
+    
+}
+
+.carro:hover{
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 100px;
+    border: 0px;
+    transition: 0.3s;
+}
+.tipo{
+    margin-left: 100px;
+    display: flex;
+    margin-top: 20px;
+} 
+
+.tipo a{
+    text-decoration: none;
+    color: black;
+}
+
+.tipo h6{
+    color: black;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+.precio{
+    justify-content: left
+}
+
+
+.texto h3,
+.texto h4,
+.texto button {
+    font-family: "Rubik";
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}   
+
+
+.maine{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.producto{
+    width: 60%;
+    height: 100%;
+    margin-right: 0 30px;
+    overflow: hidden;
+}
+
+.producto img {
+    height: 95%;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+/*---------------------------*/
+.pagina img{
+    width: 33vw;
+    height: 33vw;
+ 
+    max-height: 100%;
+    object-fit: cover;
+    padding: 20px;
+
+}
+ 
+.foto{
+    display: flex;
+}
+ 
+.thumbnails{
+    display: flex;
+    flex-direction: column;
+}
+ 
+.thumbnails img{
+    width: 75px;
+    height: 75px;
+    margin: 2px 0;
+ 
+    border-radius: 5px;
+    border: 1px solid var(--gris);
+}
+ 
+.thumbnail:hover{
+    border: 1px solid var(--rojo);
+ 
+    cursor: pointer;
+}
+
+.prodIMG{
+    width: 100px;
+    padding: 40px;
+}

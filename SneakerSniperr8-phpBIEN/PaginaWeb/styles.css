@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+:root {
+    --negro: black;
+    --blanco: white;
+}
+
+
+/*Carrito*/
+
+.carrito{
+    width: 30px;
+    height: 30px;
+}
+
+/*-------------------*/
+
+/*Header*/
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: var(--blanco);
+}
+
+.headerdiv{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    justify-content: space-evenly;
+    font-size: 25px;
+    color: var(--negro);
+}
+
+.logo{
+    height: 85%;
+    width: 85%;
+}
+/*------------------*/
+
+
+/*------------------*/
+
+/*Lupa de busqueda*/
+
+.Busqueda img{
+    margin-left: 15px;
+}
+
+/*-------------------*/
+.Menu{
+    height:100% ;
+}
+/* MENU DESPLEGABLE */
+
+.Menu:hover .Desplegable{
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.Desplegable{
+    display: none;
+    position: absolute;
+    top: 87px;
+    background-color: white;
+    left: 0;
+    width: 100%;
+}
+
+/* --------- */
+
+/*Barra de logos*/
+
+.logos img{
+    justify-content: space-evenly;
+}
+
+.logos{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #E2E8F0;
+    padding:5px 0;
+}
+
+/*---------------------*/
+
+main{
+    padding-top: 150px;
+    background-color: var(--blanco);
+}
+
+/*Carousel*/
+
+.carousel img{
+    margin: 50px auto;
+    height: 220px;
+    object-fit: contain;
+}
+
+header input{
+    width: 300px;
+    height: 30px;
+}
+
+/*Iniciar sesion / Registrate */
+
+.LogSign{
+    width: 70px;
+    height: 32px;
+    font-size: 15px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 0px;
+    transition: 0.3s;
+}
+
+.LogSign:hover{
+    width: 70px;
+    height: 32px;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: rgb(0, 0, 0);
+}
+
+/*------------------------*/
+
+.carousel-control-next{
+    top: 50%;
+    bottom: 50%;
+}
+
+.carousel-control-prev{
+    top: 50%;
+    bottom: 50%;
+}
+
+.carousel-inner{
+    margin-bottom: 100px;
+    background-color: var(--blanco);
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/*------------------------*/
+
+/* Productos */
+
+.grilla {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin: auto;
+}
+
+
+.topProducto{
+    height: 150px;
+    width: 100%;
+    align-items: center;
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 20px;
+}
+
+.topProducto img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+.botProducto{
+    background-color: white;
+    width: 100%;
+    border: 1px solid red;
+    display: center;
+}
+
+
+/*--------------------*/
+
+.desplegable{
+    display: none;
+    font-size: 18px;
+    background-color: #fff;
+    box-shadow:0px 0px 20px #999 ;
+    padding: 4px;
+    position: absolute;
+    right: 6px;
+    flex-direction: column;
+    list-style: none;
+    border: 1px solid #bbb8b8;
+ 
+}
+
+.Menu :hover .desplegable{
+    display: flex;
+
+}
+
+.carrito{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+
+/* Elimina el subrayado y el color azul de los enlaces */
+a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Hereda el color del texto del contenedor o puedes especificar un color específico */
+}
+
+/* Elimina el borde azul al hacer focus (cuando el enlace está enfocado) */
+a:focus {
+    outline: none; /* Elimina el borde azul en el enfoque */
+}
+
+/* Opcional: Si deseas cambiar el color del texto de los productos (h5, h6, h7) */
+.botProducto h5, .botProducto h6, .botProducto h7 {
+    color: black; /* Cambia el color del texto a negro o el color que desees */
+}
